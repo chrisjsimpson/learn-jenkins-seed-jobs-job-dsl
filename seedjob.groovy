@@ -1,8 +1,12 @@
 folder('OBP')
 
-job('OBP/OBP-build') {
-    scm {
-      git('https://github.com/OpenBankProject/OBP-CLI.git')
+pipelineJob('OBP/OBP-build') {
+    definition {
+        cpsScm {
+            scm {
+              git('git@github.com:OpenBankProject/OBP-CLI.git')
+            }
+        }
     }
 }
 
