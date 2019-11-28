@@ -10,3 +10,10 @@ pipelineJob('OBP/OBP-build') {
     }
 }
 
+// A simple job
+job('simple-job') {
+  scm {
+    git('git@github.com:OpenBankProject/OBP-CLI.git')
+  }
+}
+
