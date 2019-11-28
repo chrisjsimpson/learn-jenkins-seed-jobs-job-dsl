@@ -1,6 +1,7 @@
 folder('OBP')
 
 pipelineJob('OBP/OBP-build') {
+    description = "Build of OBP-CLI"
     definition {
         cpsScm {
             scm {
