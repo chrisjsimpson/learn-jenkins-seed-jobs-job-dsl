@@ -1,6 +1,6 @@
 folder('OBP')
 
-pipelineJob('OBP/OBP-build') {
+job('OBP/OBP-build') {
     definition {
         cpsScm {
             scm {
