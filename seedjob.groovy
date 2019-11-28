@@ -1,6 +1,9 @@
 folder('OBP')
 
 pipelineJob('OBP/OBP-build') {
+    triggers {
+      cron('*/2 * * * *')
+    }
     description = "Build of OBP-CLI"
     definition {
         cpsScm {
