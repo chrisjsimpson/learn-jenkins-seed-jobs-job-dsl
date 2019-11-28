@@ -1,3 +1,5 @@
+folder('project-a')
+
 pipelineJob('example') {
     definition {
         cpsScm {
