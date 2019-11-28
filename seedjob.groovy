@@ -1,2 +1,9 @@
-pipelineJob('my-deploy-seed-job') {
+pipelineJob('example') {
+    definition {
+        cpsScm {
+            scm {
+                git('https://github.com/jenkinsci/job-dsl-plugin.git')
+            }
+        }
+    }
 }
