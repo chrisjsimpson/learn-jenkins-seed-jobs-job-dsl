@@ -5,11 +5,13 @@ pipelineJob('OBP/OBP-build') {
     definition {
         cpsScm {
             scm {
-              git('https://github.com/OpenBankProject/OBP-CLI.git')
+              git('/Users/chrissimpson/Documents/programming/jenkins/OBP-CLI')
             }
         }
     }
 }
+
+queue('OBP/OBP-build')
 
 // A simple job
 job('simple-job-new-name') {
