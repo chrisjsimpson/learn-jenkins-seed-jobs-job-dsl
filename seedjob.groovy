@@ -9,3 +9,5 @@ pipelineJob('OBP/OBP-build') {
         }
     }
 }
+
+queue('OBP/OBP-build')
