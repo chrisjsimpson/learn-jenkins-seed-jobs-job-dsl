@@ -8,7 +8,7 @@ pipelineJob('OBP/OBP-CLI') {
     definition {
         cpsScm {
             scm {
-              git('/Users/chrissimpson/Documents/programming/jenkins/OBP-CLI')
+              git('https://github.com/chrisjsimpson/OBP-CLI.git')
             }
         }
     }
