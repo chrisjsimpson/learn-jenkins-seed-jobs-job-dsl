@@ -1,8 +1,8 @@
 folder('OBP')
 
-pipelineJob('OBP/OBP-build') {
+pipelineJob('OBP/OBP-CLI') {
     triggers {
-      cron('*/2 * * * *')
+      //cron('*/2 * * * *')
     }
     description = "Build of OBP-CLI"
     definition {
@@ -14,4 +14,21 @@ pipelineJob('OBP/OBP-build') {
     }
 }
 
-queue('OBP/OBP-build')
+queue('OBP/OBP-CLI')
+
+// OBP API
+pipelineJob('OBP/OBP-API') {
+  triggers {
+
+  }
+  description = "OBP API"
+  definition {
+    cpsScm {
+      scm {
+        git('https://github.com/OpenBankProject/OBP-API.git')
+      }
+    }
+  }
+}
+
+queue('OBP/OBP-API')
