@@ -27,6 +27,7 @@ pipelineJob('OBP/OBP-API') {
       scm {
         git('https://github.com/chrisjsimpson/OBP-API.git')
       }
+      scriptPath('Jenkinsfile.backup')
     }
   }
 }
