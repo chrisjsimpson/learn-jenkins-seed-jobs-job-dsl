@@ -25,7 +25,7 @@ pipelineJob('OBP/OBP-API') {
   definition {
     cpsScm {
       scm {
-        git('https://github.com/OpenBankProject/OBP-API.git')
+        git('https://github.com/chrisjsimpson/OBP-API.git')
       }
     }
   }
